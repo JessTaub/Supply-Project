@@ -9,3 +9,14 @@ banana.df=read.table(file.choose(),header=TRUE,sep=",",fill=TRUE) #fill=TRUE fix
 View(banana.data)
 
 #E:\HDocuments\Supply Project
+
+
+#GK-08-06-15
+#loop on grepl
+dummy <- NULL
+var <- c("SHIPPER","SHIPPER.ADDRESS")
+
+for (i in 1:2){
+  dummy[i] <- grepl("ADD",var[i])
+}
+dummy
